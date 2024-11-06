@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.mondrian {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  gap: 5px;
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 5px solid black;
+}
+
+.block {
+  border: 5px solid black;
+}
+
+.yellow {
+  background-color: #ffd700;
+}
+
+.blue {
+  background-color: #0000a0;
+}
+
+.red {
+  background-color: #d90000;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+/* Specific placements for each block */
+.top-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.large-rect {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.top-right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
+
+.middle-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.middle-center {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.middle-right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.bottom-left {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.bottom-center {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.bottom-right {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
